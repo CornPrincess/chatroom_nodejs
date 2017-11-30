@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Chatroom</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Condensed">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <div class="banner">
+            <h1>Welcome to My Chatroom</h1>
+            <span id="count">0 user online</span>
+        </div>
+
+        <!-- message area -->
+        <div id="msgArea" class="scroll"></div>
+
+        <!-- input area -->
+        <div class="controls">
+            <div id="emojiWrapper"></div>
+
+            <div class="items">
+                <input id="colorStyle" type="color" value="#610d0d" title="color style">
+                <input id="emoji" type="button" value="emoji" title="emoji">
+
+            </div>
+
+            <textarea id="messageInput" placeholder="press enter to send"></textarea>
+            <input id="sendBtn" type="button" value="SEND">
+
+        </div>
+    </div>
+
+    <div id="loginWrapper">
+        <p id="info">welcome to the chatroom</p>
+        <div id="nickWrapper">
+            <input id="nicknameInput" type="text" placeholder="nickname">
+            <input id="loginBtn" type="button" value="OK">
+        
+        </div>
+    </div>
+    <script>window.alert("welcome to the chatroom");</script>
+    <script src = "./js/socket.js"></script>
+    <script src = "./js/index.js"></script>
+</body>
+</html>
